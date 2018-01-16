@@ -7,5 +7,5 @@
 # If you're on Windows, please use the `make.bat` script in `docs/` directory.
 #
 
-make clean html
+cd "$(dirname "$0")" && make clean html
 

@@ -1,0 +1,6 @@
+language: python
+python:
+  - 3.5
+install:
+  - pip install -r docs/requirements.txt
+script: docs/test-docs.sh
