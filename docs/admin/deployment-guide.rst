@@ -138,16 +138,16 @@ revert it to the last working version of the application is to swap it again.
 To make the swap, go to the `Azure Panel`_ > App Services, find the project 
 you are working on and select it.
 
-.. image:: ../_static/image_01.png
+.. image:: ../_static/deployguide-appservices.png
 
 In the overview section you will find the "Swap" button, you can click in it.
 
-.. image:: ../_static/image_02.png
+.. image:: ../_static/deployguide-swap.png
 
 Make sure to select in the Swap panel "staging" as source and "production" as 
 destination.
 
-.. image:: ../_static/image_03.png
+.. image:: ../_static/deployguide-swap-menu.png
 
 Click OK to make the swap. You will get a notification once it finishes.
 
