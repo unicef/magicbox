@@ -15,6 +15,7 @@ multiple GitHub repositories designed to ingest, aggregate, and serve data.
    :caption: Contents:
 
    administrative-boundaries
+   admin/deployment-guide
 
 
 Indices and tables
