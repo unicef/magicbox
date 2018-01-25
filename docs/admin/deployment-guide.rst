@@ -93,7 +93,7 @@ issuing the command below.
 
 .. code:: bash
 
-    git remote add staging https://<project-name>-staging@<project-name>-staging.scm.azurewebsites.net:443/<project-name>-staging.git
+    git remote add staging https://<project-name>@<project-name>-staging.scm.azurewebsites.net:443/<project-name>.git
 
 Make sure to change <project-name> with the project name you are working on.
 
