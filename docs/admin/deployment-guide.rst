@@ -93,9 +93,10 @@ issuing the command below.
 
 .. code:: bash
 
-    git remote add staging https://<project-name>@<project-name>-staging.scm.azurewebsites.net:443/<project-name>.git
+    git remote add staging https://<username>@<project-name>-staging.scm.azurewebsites.net:443/<project-name>.git
 
-Make sure to change <project-name> with the project name you are working on.
+Make sure to change <project-name> with the project name you are working on and
+<username> for your username set in the deployment credentials in Azure.
 
 
 Pushing changes to the staging slot
