@@ -15,7 +15,15 @@ multiple GitHub repositories designed to ingest, aggregate, and serve data.
    :caption: Contents:
 
    administrative-boundaries
-   admin/deployment-guide
+   data-validation
+   
+.. toctree::
+   :maxdepth: 2
+   :name: admin
+   :caption: Administration
+   :glob:
+
+   admin/*
 
 
 Indices and tables
