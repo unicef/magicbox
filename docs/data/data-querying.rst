@@ -89,6 +89,10 @@ its ID number. Some of the values available are listed below:
 - If running water is available
 - And more
 
+.. figure:: /_static/data-querying-school-data.png
+
+  Example of output from third endpoint inside of a front-end utilizing the API 
+
 
 *******
 Caveats
