@@ -39,7 +39,7 @@ Adding new attributes
 
 After the data is validated, the `magicbox-latlong-admin-server`_ updates
 attributes for some data. The attributes are only added if the engine returns an
-admin area ID for the target country (see :doc:`administrative-boundaries`).
+admin area ID for the target country (see :doc:`../administrative-boundaries`).
 
 #. ``date_geo_validated``: To ``CURRENT_TIMESTAMP``
 #. ``coords_within_country``: true or false
