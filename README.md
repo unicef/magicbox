@@ -1,7 +1,8 @@
 MagicBox
 ========
 
-[![Documentation Status](https://readthedocs.org/projects/magicbox/badge/?version=latest)](https://magicbox.readthedocs.io/en/latest/?badge=latest) [![Build Status](https://travis-ci.org/unicef/magicbox.svg?branch=master)](https://travis-ci.org/unicef/magicbox)
+[![Documentation Status](https://readthedocs.org/projects/magicbox/badge/?version=latest)](https://magicbox.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.org/unicef/magicbox.svg?branch=master)](https://travis-ci.org/unicef/magicbox)
 
 Platform that uses real-time data to inform life-saving humanitarian responses
 to emergency situations
