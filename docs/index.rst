@@ -12,15 +12,23 @@ multiple GitHub repositories designed to ingest, aggregate, and serve data.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :name: general
+   :caption: General:
 
    administrative-boundaries
-   data-validation
+
+.. toctree::
+   :maxdepth: 2
+   :name: data
+   :caption: Data:
+   :glob:
+   
+   data/*
    
 .. toctree::
    :maxdepth: 2
    :name: admin
-   :caption: Administration
+   :caption: Administration:
    :glob:
 
    admin/*
