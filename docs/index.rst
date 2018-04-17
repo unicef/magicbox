@@ -11,14 +11,14 @@ life-saving humanitarian responses to emergency situations. It's composed of
 multiple GitHub repositories designed to ingest, aggregate, and serve data.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :name: general
    :caption: General:
 
    administrative-boundaries
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :name: data
    :caption: Data:
    :glob:
@@ -26,7 +26,7 @@ multiple GitHub repositories designed to ingest, aggregate, and serve data.
    data/*
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :name: admin
    :caption: Administration:
    :glob:

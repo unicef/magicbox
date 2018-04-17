@@ -94,7 +94,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #
 html_theme_options = {
     'collapse_navigation': False,
-    'navigation_depth': 2,
+    'navigation_depth': 3,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
