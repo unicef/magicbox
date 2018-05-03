@@ -25,7 +25,7 @@ These makes projects more organized, easier to follow from an outsider's perspec
 Repository creation
 ===================
 
-These steps focus on the initial repository creation, from `github.com/new <https://github.com/new>`__.
+These steps focus on the initial repository creation, from `github.com/new <https://github.com/new>`_.
 
 #. **Set a meaningful name**:
 
@@ -35,11 +35,11 @@ These steps focus on the initial repository creation, from `github.com/new <http
 
 #. **Write a description**: Write one or two sentences to quickly describe the project
 
-#. **Initialize with README**: Check if you want a README file
+#. **Initialize with README**: Check to add a ``README.md`` file
 
-    - If you do not have one written yet, initialize with one
+    - If one is not yet written, initialize one
 
-#. **Add .gitignore for project type**: Find your project's programming language and choose its ``.gitignore`` file, if available
+#. **Add .gitignore for project type**: Find project's programming language and choose its ``.gitignore`` file, if available
 
 #. **Add BSD-3 Clause license**: Standard license used for UNICEF Innovation projects
 
@@ -51,24 +51,24 @@ These steps focus on the initial repository creation, from `github.com/new <http
 Configure repository
 ====================
 
-Now, your repository is created.
-Make sure you have done the following things:
+Now, the repository is created.
+Make sure these settings are updated:
 
 Disable unneeded tools
 ----------------------
 
 Disable any unneeded features or repository tools.
-If they are needed, you can always turn them on later.
-Turning off things you do not plan to use makes it easier for someone to find the useful places of your project.
+If they are needed, they can be turned on again later.
+Turning off unneeded features makes it easier for someone to find the useful places in the project.
 It can also indicate if the thing they are looking for (e.g. documentation) is somewhere else.
 
 These features are found under the *Settings* menu for every repository.
 
 .. figure:: /_static/github-workflow-disable-features.png
-   :alt: Disable tools you do not need, like a wiki or project boards
+   :alt: Disable unneeded tools, like a wiki or project boards
 
-   Disable tools you do not need, like a wiki or project boards.
-   You may have documentation or project boards set up elsewhere.
+   Disable unneeded tools, like a wiki or project boards.
+   There may be documentation or project boards set up elsewhere.
    This does not disable organization-level project boards.
 
 Set description, URL, topic tags
@@ -78,22 +78,22 @@ Make sure every repository has a description and topic tags set.
 If there is a URL to view a demo of the project or read more about it, include it too.
 
 At the top of every GitHub repository, there are fields of metadata for a description, a URL, and topic tags.
-A description and URL helps someone understand your project in one or two sentences or see a live demo.
-Topic tags raise visibility in the GitHub ecosystem and help other people discover your projects.
+A description and URL helps someone understand tge project in one or two sentences or see a live demo.
+Topic tags raise visibility in the GitHub ecosystem and help other people discover new projects.
 
 .. figure:: /_static/github-workflow-description-tags-empty.png
    :alt: Example of no description, URL, or topic tags
 
    Example of no description, URL, or topic tags
 
-Do not leave your repos empty like this.
+Do not leave a repository empty like this.
 Use the *Edit* button on the right to change the description and URL.
 Two text boxes will appear.
 
 For topic tags, click *Add topics* towards the left.
 Choose tags related to your project to help identify it.
 Consider programming languages, frameworks, or other software used.
-You can also use tags for type of software, like ``humanitarian`` or ``united-nations``.
+Tags like ``humanitarian`` or ``united-nations`` are also examples of tags for types of software.
 
 .. figure:: /_static/github-workflow-description-tags-filled.png
    :alt: magicbox-latlon-admin-server with description and topic tags
@@ -103,7 +103,69 @@ You can also use tags for type of software, like ``humanitarian`` or ``united-na
 Set up useful labels
 ====================
 
-.. note:: To be written.
+Labels are visual organization tools for your GitHub project.
+They make issues easier to sort and prioritize tasks.
+Additionally, they also help new contributors identify areas of interest for your project.
+They can help improve awareness of different types of contribution methods in your project (e.g. design and documentation tasks).
+
+Configure each repository's labels in a way that makes sense for your project.
+The labels should mean something to *you* so they are easily applied for sorting later.
+Every repository's issue and pull request labels are found under the *Issues* tab with the *Labels* button.
+
+.. figure:: /_static/github-workflow-labels-menu.png
+   :alt: Click the Labels button towards the right of the search bar
+
+   Click the *Labels* button towards the right of the search bar
+
+A good example of labels is on the `unicef/magicbox`_ repository.
+For convenience, the full list of label names and descriptions is below, as a reference.
+
++-----------------------+------------+-----------------------------------------------------------------------+
+| Name                  | Color code | Description                                                           |
++=======================+============+=======================================================================+
+| blocked               | #F60404    | Progress blocked by another task or issue                             |
++-----------------------+------------+-----------------------------------------------------------------------+
+| bug                   | #ee0701    | Something isn't working                                               |
++-----------------------+------------+-----------------------------------------------------------------------+
+| community             | #20c8db    | Supporting and building the project community                         |
++-----------------------+------------+-----------------------------------------------------------------------+
+| docs                  | #3ef2c5    | Adding or updating documentation                                      |
++-----------------------+------------+-----------------------------------------------------------------------+
+| duplicate             | #cccccc    | This issue or pull request already exists                             |
++-----------------------+------------+-----------------------------------------------------------------------+
+| enhancement           | #84b6eb    | New improvement or request                                            |
++-----------------------+------------+-----------------------------------------------------------------------+
+| good first issue      | #7057ff    | Good for newcomers                                                    |
++-----------------------+------------+-----------------------------------------------------------------------+
+| help wanted           | #FF3366    | Anyone is welcome to help us with this!                               |
++-----------------------+------------+-----------------------------------------------------------------------+
+| in progress           | #128A0C    | This is being worked on right now                                     |
++-----------------------+------------+-----------------------------------------------------------------------+
+| internal organization | #d4c5f9    | Keeps us organized and efficient                                      |
++-----------------------+------------+-----------------------------------------------------------------------+
+| invalid               | #e6e6e6    | This doesn't seem right                                               |
++-----------------------+------------+-----------------------------------------------------------------------+
+| needs info            | #E05A09    | Extra attention or information needed                                 |
++-----------------------+------------+-----------------------------------------------------------------------+
+| next meeting          | #EBF10E    | To be discussed at next team meeting                                  |
++-----------------------+------------+-----------------------------------------------------------------------+
+| onboarding            | #eab28f    | Improving onboarding experience for new contributors and team members |
++-----------------------+------------+-----------------------------------------------------------------------+
+| outreach              | #e589b3    | Sharing and communicating about the project externally                |
++-----------------------+------------+-----------------------------------------------------------------------+
+| priority:crit         | #b60205    | Critical priority: this MUST be addressed first                       |
++-----------------------+------------+-----------------------------------------------------------------------+
+| priority:high         | #d93f0b    | High priority: needs immediate attention                              |
++-----------------------+------------+-----------------------------------------------------------------------+
+| priority:low          | #fef2c0    | Low priority: we're not thinking about it yet                         |
++-----------------------+------------+-----------------------------------------------------------------------+
+| priority:med          | #fbca04    | Medium priority: doesn't need immediate attention                     |
++-----------------------+------------+-----------------------------------------------------------------------+
+| wontfix               | #ffffff    | This will not be worked on                                            |
++-----------------------+------------+-----------------------------------------------------------------------+
+
+Not all of these labels will be helpful for a new project.
+Take ones that make sense, and make new labels specific to the project, if needed.
 
 Set up continuous integration (CI)
 ==================================
@@ -139,18 +201,18 @@ Housekeeping has five parts:
 
 #. Reviewing pull requests
 
-Update issue metadata
-=====================
+Update issue and pull request metadata
+======================================
 
-Every GitHub issue has four metadata properties:
+Every GitHub issue and pull request has four metadata properties:
 
-#. **Assignees**: Who is currently working on an issue and the best point-of-contact for updates
+#. **Assignees**: Who is currently working on this and who is the best point-of-contact for updates
 
 #. **Labels**: Visual cues on task status and importance (see below)
 
 #. **Projects**: Advanced business process management (see below)
 
-#. **Milestone**: Relevant feature or version milestone for an issue
+#. **Milestone**: Relevant feature or version milestone for an issue or pull request
 
 Assignees and labels should always be used at a minimum.
 Use projects and milestones when they are available.
@@ -163,14 +225,22 @@ Use projects and milestones when they are available.
 Adding labels to issues
 =======================
 
-.. note:: To be written.
+Above, labels were mentioned as part of issue and pull request metadata.
+Maintaining and using labels is a good habit.
+An issue or pull request might have two to four labels, depending on how the project was set up.
+
+If labels are not yet configured, read `Set up useful labels`_.
+
+Once a week, check issues and pull requests to see if tags are up-to-date.
+Update or change any labels that are stale (such as priority labels).
+Add labels from the metadata sub-menu when you open an issue or pull request.
 
 Updating project boards
 =======================
 
-`GitHub project boards <https://help.github.com/articles/about-project-boards/>`__ are an organizational tool for the project.
-They use a `kanban-style <https://en.wikipedia.org/wiki/Kanban_(development)>`__ approach to organizing GitHub issues and pull requests.
-Our workflow is explained `on Opensource.com <https://opensource.com/article/18/4/keep-your-project-organized-git-repo>`__.
+`GitHub project boards <https://help.github.com/articles/about-project-boards/>`_ are an organizational tool for the project.
+They use a `kanban-style <https://en.wikipedia.org/wiki/Kanban_(development)>`_ approach to organizing GitHub issues and pull requests.
+Our workflow is explained `on Opensource.com <https://opensource.com/article/18/4/keep-your-project-organized-git-repo>`_.
 
 To update and maintain the project boards…
 
@@ -193,13 +263,12 @@ Outside contributors will always have to make pull requests, so it is good pract
 Follow contributing guidelines
 ------------------------------
 
-The contributing guidelines for all MagicBox projects live `in the unicef/magicbox repo <https://github.com/unicef/magicbox/blob/master/.github/CONTRIBUTING.md>`__.
+The contributing guidelines for all MagicBox projects live `in the unicef/magicbox repository <https://github.com/unicef/magicbox/blob/master/.github/CONTRIBUTING.md>`_.
 
 Always follow these contributing guidelines when working in the project.
 These are the standards and rules we ask the community to follow when contributing.
 As project maintainers, it is our responsibility to hold ourselves to the same standards we ask of others.
 Thus, always make sure current development practices are in-line with what our guidelines.
-
 
 Write useful commit messages
 ----------------------------
@@ -209,7 +278,7 @@ When looking through project commits, it should be somewhat clear what has chang
 Short or nondescript commit messages are not helpful to maintainers or new contributors.
 Commit messages do not need to be paragraphs, but they should clearly indicate what changed or why something changed.
 
-Read `this blog post <https://nathanleclaire.com/blog/2014/09/14/dont-be-scared-of-git-rebase/>`__ for more information about keeping git history clean and tidy with ``git rebase``.
+Read `this blog post <https://nathanleclaire.com/blog/2014/09/14/dont-be-scared-of-git-rebase/>`_ for more information about keeping git history clean and tidy with ``git rebase``.
 
 Reviewing pull requests
 =======================
@@ -226,7 +295,9 @@ Reviewing pull requests
 Communicating about development
 *******************************
 
-Communication about development should be kept public as much as possible in `our Gitter chat <https://gitter.im/unicef-innovation-dev/Lobby>`__.
+Communication about development should be kept public as much as possible in `our Gitter chat <https://gitter.im/unicef-innovation-dev/Lobby>`_.
 Whenever you make a new pull request, always share the link in the main Gitter chat room.
 This lets other developers know you made a change and also gives them an opportunity to review your code.
 And if you want a code review, be sure to ask for it too.
+
+.. _`unicef/magicbox`: https://github.com/unicef/magicbox
