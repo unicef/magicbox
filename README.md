@@ -21,26 +21,42 @@ You can read more about the project's purpose on
 
 ## What's here
 
-This repo is the "master" repo for all MagicBox-related projects. Documentation
-or other misc. resources for the project are hosted here. Code for other
-projects, like the API and front-end, are hosted in other repositories.
+This repo is the "master" repo for all MagicBox-related projects. It hosts 
+the documentation and other misc. resources for MagicBox. Code for other
+projects, like the [API](https://github.com/unicef/magicbox-open-api) and 
+[front-end](https://github.com/unicef/magicbox-maps), are hosted in other 
+repositories. See the [project index](https://github.com/unicef/magicbox/blob/master/project-index.md)
+for a full list of MagicBox-related repos and their respective maintainers.
+
+## Contributing
+
+**We are looking for collaboration from the Open Source community!** There's
+so much we want to do, including but not limited to: enhancing existing 
+applications with new features, optimizing the techical tools and algorithms 
+involved to accomodate data challenges, and bringing our work closer to
+the public to leverage their intputs via blog posts and tutorials.
+
+* Please read our [contribution guidelines](https://github.com/unicef/magicbox/blob/master/.github/CONTRIBUTING.md) 
+for details on what and how you can contribute.
+* Check out our [Development Project Board](https://github.com/orgs/unicef/projects/2).
+* Look for tasks labelled `good first issues` under the Issues tab in each repo.
+* Join our [Gitter channel](https://gitter.im/unicef-innovation-dev/Lobby).
 
 
 ## Documentation
 
 Project documentation is hosted on
-[ReadTheDocs](https://magicbox.readthedocs.io/).
+[ReadTheDocs](https://magicbox.readthedocs.io/). Its current version is mostly suited 
+for developers who want to understand more about our underlying tech. We are hoping to
+establish a more user-friendly version soon, one that is readable by our potential users 
+(e.g. data scientists and decision-makers in UNICEF country offices, state governments, 
+other UN agencies).
 
 
 ## Resources
 
-To understand MagicBox better, check out some of these blog posts.
+To understand MagicBox better:
 
-* [The Magic Box API
-  Wiki](https://medium.com/@mikefabrikant/the-magic-box-wiki-a69e20a1dcfe)
-* [Mapping the world’s population with
-  worldpop.org.uk](https://medium.com/@mikefabrikant/mapping-the-worlds-population-with-worldpop-org-uk-f71a336befef)
-* [How demographic information can be gleaned from satellite images of the
-  Earth](https://medium.com/@mikefabrikant/how-demographic-information-can-be-gleaned-from-satellite-images-of-the-earth-mapping-geojson-to-a86ba3f0f00c)
-* [Using open and private data to improve decision making in the humanitarian
-  world](https://medium.com/@mikefabrikant/using-open-and-private-data-to-improve-decision-making-in-the-humanitarian-world-magic-box-and-da57dfe7d492)
+* Read the README for each repo (full list is [here](https://github.com/unicef/magicbox/blob/master/project-index.md)). 
+An architecture diagram of how these components are connected to one another is coming soon.
+* Check out our [Medium blog posts](https://medium.com/@mikefabrikant/latest).
