@@ -32,14 +32,14 @@ for a full list of MagicBox-related repos and their respective maintainers.
 
 **We are looking for collaboration from the Open Source community!** There's
 so much we want to do, including but not limited to: enhancing existing 
-applications with new features, optimizing the techical tools and algorithms 
-involved to accomodate data challenges, and bringing our work closer to
-the public to leverage their intputs via blog posts and tutorials.
+applications with new features, optimizing the technical tools and algorithms 
+involved to accommodate data challenges, and bringing our work closer to
+the public to leverage their inputs via blog posts and tutorials.
 
 * Please read our [contribution guidelines](https://github.com/unicef/magicbox/blob/master/.github/CONTRIBUTING.md) 
 for details on what and how you can contribute.
 * Check out our [Development Project Board](https://github.com/orgs/unicef/projects/2).
-* Look for tasks labelled `good first issues` under the Issues tab in each repo.
+* Look for tasks labelled `good first issue` under the Issues tab in each repo.
 * Join our [Gitter channel](https://gitter.im/unicef-innovation-dev/Lobby).
 
 
