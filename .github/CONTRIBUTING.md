@@ -81,8 +81,7 @@ When filing an issue, answer these five questions:
 ## Code review process
 
 The core team at the UNICEF Office of Innovation reviews pull requests on a
-weekly basis. The core team may vary – see an updated list [on the MagicBox
-wiki](https://github.com/unicef/magicbox/wiki/Project-index).
+weekly basis. The core team may vary – see an updated list in the [project index](https://github.com/unicef/magicbox/blob/master/project-index.md).
 
 Expect a response on new pull requests **within five business days** (Mon-Fri).
 If you don't receive any feedback, please follow up with a new comment!
