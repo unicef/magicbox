@@ -117,52 +117,7 @@ Every repository's issue and pull request labels are found under the *Issues* ta
 
    Click the *Labels* button towards the right of the search bar
 
-A good example of labels is on the `unicef/magicbox`_ repository.
-For convenience, the full list of label names and descriptions is below, as a reference.
-
-+-----------------------+------------+-----------------------------------------------------------------------+
-| Name                  | Color code | Description                                                           |
-+=======================+============+=======================================================================+
-| blocked               | #F60404    | Progress blocked by another task or issue                             |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| bug                   | #ee0701    | Something isn't working                                               |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| community             | #20c8db    | Supporting and building the project community                         |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| docs                  | #3ef2c5    | Adding or updating documentation                                      |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| duplicate             | #cccccc    | This issue or pull request already exists                             |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| enhancement           | #84b6eb    | New improvement or request                                            |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| good first issue      | #7057ff    | Good for newcomers                                                    |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| help wanted           | #FF3366    | Anyone is welcome to help us with this!                               |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| in progress           | #128A0C    | This is being worked on right now                                     |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| internal organization | #d4c5f9    | Keeps us organized and efficient                                      |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| invalid               | #e6e6e6    | This doesn't seem right                                               |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| needs info            | #E05A09    | Extra attention or information needed                                 |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| next meeting          | #EBF10E    | To be discussed at next team meeting                                  |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| onboarding            | #eab28f    | Improving onboarding experience for new contributors and team members |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| outreach              | #e589b3    | Sharing and communicating about the project externally                |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| priority:crit         | #b60205    | Critical priority: this MUST be addressed first                       |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| priority:high         | #d93f0b    | High priority: needs immediate attention                              |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| priority:low          | #fef2c0    | Low priority: we're not thinking about it yet                         |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| priority:med          | #fbca04    | Medium priority: doesn't need immediate attention                     |
-+-----------------------+------------+-----------------------------------------------------------------------+
-| wontfix               | #ffffff    | This will not be worked on                                            |
-+-----------------------+------------+-----------------------------------------------------------------------+
+A good example of labels is `here <https://github.com/unicef/magicbox/labels>`_ on the `unicef/magicbox`_ repository. (To view the color code for a given label, click the "Edit" on its row.)
 
 Not all of these labels will be helpful for a new project.
 Take ones that make sense, and make new labels specific to the project, if needed.
