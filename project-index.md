@@ -1,4 +1,4 @@
-All MagicBox projects and repositories underneath the UNICEF GitHub organization are listed here. To learn more about each project, see either the [main MagicBox wiki page](https://github.com/unicef/magicbox/wiki) or the README in each repository.
+All MagicBox projects and repositories underneath the UNICEF GitHub organization are listed here. To learn more about each project, see the README in each repository.
 
 | Repository | Description | Maintainers |
 |------------|-------------|-------------|
@@ -10,3 +10,5 @@ All MagicBox projects and repositories underneath the UNICEF GitHub organization
 | [unicef/magicbox-latlon-admin-server](https://github.com/unicef/magicbox-latlon-admin-server) | API that takes latitude/longitude pairs, and returns an ID and metadata for the administrative boundaries they're located within | [@mikefab](https://github.com/mikefab) |
 | [unicef/magicbox-maps](https://github.com/unicef/magicbox-maps) | | [@mikefab](https://github.com/mikefab), [@ayanez17](https://github.com/ayanez17) |
 | [unicef/magicbox-open-api](https://github.com/unicef/magicbox-open-api) | API to serve open data aggregated by administrative boundaries | [@mikefab](https://github.com/mikefab) |
+
+Note: Another way to find all MagicBox-related repos is to go to UNICEF GitHub mainpage and enter the search term "magicbox", like [here](https://github.com/unicef?utf8=%E2%9C%93&q=magicbox&type=&language=). There you'll be able to see which repos are under more active development than the others.
