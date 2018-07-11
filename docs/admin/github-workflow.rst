@@ -126,28 +126,26 @@ Take ones that make sense, and make new labels specific to the project, if neede
 
 Set up continuous integration (CI)
 ==================================
-After his research, @jwflory - one of our former interns - `decided <https://github.com/unicef/magicbox-aggregate-mobility/issues/11>`_ to select Travis CI for our repos. Below is how you are going to add this service to a repo:
 
-1. Make sure you have the admin access to the repo. (New core developers can gain such access across multiple repos if @mikefab or one of the people in charge adds them to the `MagicBox Admins team <https://github.com/orgs/unicef/teams/magicbox-admins/members>`_.)
+After his research, `@jwflory <https://github.com/jwflory>`_ - one of our former interns - `decided <https://github.com/unicef/magicbox-aggregate-mobility/issues/11>`_ to select Travis CI for our repos. Below is how you are going to add this service to a repo:
 
-2. If you are *not* on Travis CI yet, browse to `travis-ci.com <https://travis-ci.com/>`_ and log in with your GitHub account. Along the way, you will have the option to add any repo to Travis CI. Select "Only select repositories" and choose ``unicef/<the-repo-of-interest>`` from the drop-down list. **NOTE**: As of 07/2018, we still go by handpicking repos rather than adding every repo to Travis CI, although this policy might change in the future. Once you arrive at your Travis CI Profile page, you will see the list of all repos currently under Travis CI tracking (whether from your personal account or the unicef GitHub account).
+ #. Make sure you have the admin access to the repo. (New core developers can gain such access across multiple repos if `@mikefab <https://github.com/mikefab>`_ or one of the people in charge adds them to the `MagicBox Admins team <https://github.com/orgs/unicef/teams/magicbox-admins/members>`_.)
+ #. If you are *not* on Travis CI yet, browse to `travis-ci.com <https://travis-ci.com/>`_ and log in with your GitHub account. Along the way, you will have the option to add any repo to Travis CI. Select "Only select repositories" and choose ``unicef/<the-repo-of-interest>`` from the drop-down list. **NOTE**: As of 07/2018, we still go by handpicking repos rather than adding every repo to Travis CI, although this policy might change in the future. Once you arrive at your Travis CI Profile page, you will see the list of all repos currently under Travis CI tracking (whether from your personal account or the unicef GitHub account).
+ #. Now go to the repo's home page, click on the **Settings** tab, then select **Integrations & services** from the left-side menu. If everything is properly set up in the previous step, you should see Travis CI under the Installed GitHub Apps.
+ #. Go to the root directory of the repo and add a new file called ``.travis.yml``. Place the following content in that file:
 
-3. Now go to the repo's home page, click on the **Settings** tab, then select **Integrations & services** from the left-side menu. If everything is properly set up in the previous step, you should see Travis CI under the Installed GitHub Apps.
+  .. code-block:: javascript
 
-4. Go to the root directory of the repo and add a new file called ``.travis.yml``. Place the following content in that file:
-::
+   language: node_js
+   node_js:
+     - "8"
+   cache:
+     directories:
+       - "node_modules"
 
-  language: node_js
-  node_js:
-    - "8"
-  cache:
-    directories:
-      - "node_modules"
+  (If all of this doesn't make sense, use the following `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.)
 
-(If all of this doesn't make sense, use the following `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.)
-
-5. Last step is to add the Travis CI badge to the repo's README. Go to the Travis CI page of the repo - the URL probably looks like this: ``htps://travis-ci.com/unicef/the-repo-of-interest``. Find the status symbol (the little bar to the right of the Octocat) next to your repo's name. Click on it to generate the code block you'll put into your README, by selecting Markdown from the second dropdown menu when the Status Image window pops up (see the guide `here <https://docs.travis-ci.com/user/status-images/>`_).
-Copy the code snippet and place it on top of your repo's README file, just under the repo's name.
+ 5. Last step is to add the Travis CI badge to the repo's README. Go to the Travis CI page of the repo - the URL probably looks like this: ``htps://travis-ci.com/unicef/the-repo-of-interest``. Find the status symbol (the little bar to the right of the Octocat) next to your repo's name. Click on it to generate the code block you'll put into your README, by selecting Markdown from the second dropdown menu when the Status Image window pops up (see the guide `here <https://docs.travis-ci.com/user/status-images/>`_). Copy the code snippet and place it on top of your repo's README file, just under the repo's name.
 
 .. _set-up-code-health-checks:
 
