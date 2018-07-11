@@ -127,15 +127,35 @@ Take ones that make sense, and make new labels specific to the project, if neede
 Set up continuous integration (CI)
 ==================================
 
-.. note:: To be written.
+After his research, @jwflory - one of our former interns - [decided](https://github.com/unicef/magicbox-aggregate-mobility/issues/11) to select Travis CI for our repos. Below is how you are going to add this service to a repo:
+1. Make sure you have the admin access to the repo. (New core developers can gain such access across multiple repos if @mikefab or one of the people in charge adds them to the [MagicBox Admins team](https://github.com/orgs/unicef/teams/magicbox-admins/members).)
+2. If you are _not_ on Travis CI yet, browse to travis-ci.com and log in with your GitHub account. Along the way, you will have the option to add any repo to Travis CI. Select "Only select repositories" and choose `unicef/<the-repo-of-interest>` from the drop-down list. **NOTE**: As of 07/2018, we still go by handpicking repos rather than adding every repo to Travis CI, although this policy might change in the future. Once you arrive at your Travis CI Profile page, you will see the list of all repos (whether from your personal account or the unicef GitHub account) under Travis CI tracking.
+3. Now go to the repo's home page, click on the **Settings** tab, then select **Integrations & services** from the left-side menu. If everything is properly set up in the previous step, you should see Travis CI under the Installed GitHub Apps.
+4. Go to the root directory of the repo and add a new file called `.travis.yml`. Place the following content in that file:
+```
+language: node_js
+node_js:
+  - "8"
+cache:
+  directories:
+    - "node_modules"
+```
+(If all of this doesn't make sense, use the following [Getting Started guide](https://docs.travis-ci.com/user/getting-started/) by Travis CI).
+5. Last step: add the Travis CI badge to the repo's README: go to the Travis CI page of the repo - the URL probably looks like this: `htps://travis-ci.com/unicef/the-repo-of-interest`. Find the status symbol (the bar to the right of the Octocat) next to your repo's name. Click on it to generate the code block you'll put into your README, by selecting Markdown from the second dropdown menu when the Status Image window pops up (see the guide [here](https://docs.travis-ci.com/user/status-images/)).
+Copy the code snippet and place it on top of your repo's README file, just under the repo's name.
 
 .. _set-up-code-health-checks:
 
 Set up code health checks with CodeClimate
 ==========================================
 
-.. note:: To be written.
-
+- Set up Code health checks:
+We use CodeClimate for our projects. What this does is that ... Below is how you are going to add this service to a repo:
+   - Similar to above, you need admin access to carry out this task.
+   - Go to the repo home page, click "Settings" tab > select "Integrations & services" from the left-side menu, then add .... Then select the "Webhooks" tab, add a new webhook using the webhook URL.
+(if all of this doesn't make sense, use the guide from CodeClimate here: )
+   - Enable/Configure the Test Coverage service: ...
+   - Add the Maintainability and the Test Coverage badges to the repo's README: ...
 
 ***********************************
 How to maintain a GitHub repository
