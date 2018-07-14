@@ -122,10 +122,14 @@ A good example of labels is `here <https://github.com/unicef/magicbox/labels>`_ 
 Not all of these labels will be helpful for a new project.
 Take ones that make sense, and make new labels specific to the project, if needed.
 
+.. _set-up-ci:
+
 Set up continuous integration (CI)
 ==================================
 
 .. note:: To be written.
+
+.. _set-up-code-health-checks:
 
 Set up code health checks with CodeClimate
 ==========================================
@@ -238,12 +242,68 @@ Read `this blog post <https://nathanleclaire.com/blog/2014/09/14/dont-be-scared-
 Reviewing pull requests
 =======================
 
-.. note:: To be written.
+Pull requests (often abbreviated as PRs) are the cornerstone of accepting contributions to countless open source projects.
+All major contributions to a project, from both core contributors and new contributors, should be made as pull requests.
+It is important to follow consistent practices when reviewing pull requests.
 
-- triage, triage, triage
-- CI
-- health checks
-- code review comments
+Triage new pull requests
+------------------------
+
+Update the metadata for all new pull requests, especially if they will be open for *longer than one work day*.
+Examples of metadata includes the following:
+
+- **Assignees**: Indicates whose responsibility it is to review or accept a pull request
+
+- **Labels**: Indicates what type of change the pull request is and what its priority is
+
+- **Projects**: Provides context to overall project development (if using project boards)
+
+- **Milestones**: Connects pull request to a specific goal or version (if applicable)
+
+Triaging new pull requests by updating the metadata keeps the project organized.
+It is easier for an outsider to understand the project workflow and development by triaging.
+It is also helpful to give context for a pull request if you have to update it later.
+For example, if a pull request cannot be merged because of an external problem, label it as **blocked**.
+
+Use continuous integration (CI)
+-------------------------------
+
+Use the CI added :ref:`in the previous section <set-up-ci>` as a basic requirement for accepting new contributions.
+All pull requests will run your test suite and ensure new contributions pass all tests.
+This prevents bad code from slipping under the cracks and making it into a production environment.
+It also provides quick, instant feedback for a new contribution.
+The contributor immediately knows their change broke the application and know test is not passing.
+
+For *all* new contributions, from both active and new contributors, ensure all CI tests pass before merging a pull request.
+Bypassing CI health checks by pushing directly to the repository or merging a pull request before tests finish bypasses the advantages of CI.
+
+
+Use code health checks
+----------------------
+
+Use the code health checks added :ref:`earlier in this section <set-up-code-health-checks>` as another requirement for accepting new contributions.
+There are many ways for you to configure the code health checks.
+Use them as a way to set standards for code quality and enforce those standards automatically in new contributions.
+The code health checks offer both already active and new contributors a way to understand the impact of their changes.
+This results in clear code that is easier to maintain in the long-term.
+
+Ensure all new contributions receive passing grades from the code health checking tool before accepting them.
+
+Leave a review
+--------------
+
+Code review is a helpful practice for any software project and team, as explained in `this Atlassian blog post <https://www.atlassian.com/agile/software-development/code-reviews>`_.
+It is a chance to catch deeper problems before they enter the code base.
+It also provides a chance for mentorship and guidance for a new contributor.
+Additionally, it improves the overall health of your project and makes an outside contribution more likely to contribute again.
+Taking the time to review someone's contribution and code is also validation of their time and energy spent to make that contribution.
+
+Spending the time to review new contributions should be as regular of a practice as writing your own code.
+Ensure each new pull request receives a review, even if it is a passing review with no comments.
+If you do leave feedback, make sure it is kind and courteous – be aware of how you deliver your feedback.
+See `this guide <https://medium.freecodecamp.org/unlearning-toxic-behaviors-in-a-code-review-culture-b7c295452a3c>`_ on unlearning toxic behavior in code reviews.
+
+Always remember to thank a contributor for their contribution too.
 
 
 *******************************
