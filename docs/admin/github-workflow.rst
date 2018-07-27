@@ -78,7 +78,7 @@ Make sure every repository has a description and topic tags set.
 If there is a URL to view a demo of the project or read more about it, include it too.
 
 At the top of every GitHub repository, there are fields of metadata for a description, a URL, and topic tags.
-A description and URL helps someone understand tge project in one or two sentences or see a live demo.
+A description and URL helps someone understand the project in one or two sentences or see a live demo.
 Topic tags raise visibility in the GitHub ecosystem and help other people discover new projects.
 
 .. figure:: /_static/github-workflow-description-tags-empty.png
@@ -117,7 +117,7 @@ Every repository's issue and pull request labels are found under the *Issues* ta
 
    Click the *Labels* button towards the right of the search bar
 
-A good example of labels is `here <https://github.com/unicef/magicbox/labels>`_ on the `unicef/magicbox`_ repository. (To view the color code for a given label, click the *Edit* on its row.)
+A good example of labels is `here <https://github.com/unicef/magicbox/labels>`_ on the `unicef/magicbox`_ repository. To view the color code for a given label, click the *Edit* on its row.
 
 Not all of these labels will be helpful for a new project.
 Take ones that make sense, and make new labels specific to the project, if needed.
@@ -127,7 +127,7 @@ Take ones that make sense, and make new labels specific to the project, if neede
 Set up continuous integration (CI)
 ==================================
 
-*FYI*: `Why we need CI <https://github.com/unicef/magicbox/issues/6>`_
+- `Why we need CI <https://github.com/unicef/magicbox/issues/6>`_
 
 After his research, Justin (`@jwflory <https://github.com/jwflory>`_) - one of our former interns - `decided <https://github.com/unicef/magicbox-aggregate-mobility/issues/11>`_ to select `Travis CI <https://travis-ci.com/>`_ for our repos.
 Below is how you can add this service to a repo:
