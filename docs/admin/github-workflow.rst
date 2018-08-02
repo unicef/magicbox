@@ -117,7 +117,8 @@ Every repository's issue and pull request labels are found under the *Issues* ta
 
    Click the *Labels* button towards the right of the search bar
 
-A good example of labels is `here <https://github.com/unicef/magicbox/labels>`_ on the `unicef/magicbox`_ repository. To view the color code for a given label, click the *Edit* on its row.
+A good example of labels is `here <https://github.com/unicef/magicbox/labels>`_ on the `unicef/magicbox`_ repository.
+To view the color code for a given label, click the *Edit* on its row.
 
 Not all of these labels will be helpful for a new project.
 Take ones that make sense, and make new labels specific to the project, if needed.
@@ -129,22 +130,23 @@ Set up continuous integration (CI)
 
 - `Why we need CI <https://github.com/unicef/magicbox/issues/6>`_
 
-After his research, Justin (`@jwflory <https://github.com/jwflory>`_) - one of our former interns - `decided <https://github.com/unicef/magicbox-aggregate-mobility/issues/11>`_ to select `Travis CI <https://travis-ci.com/>`_ for our repos.
-Below is how you can add this service to a repo:
+MagicBox repositories use `Travis CI <https://travis-ci.com/>`_ for continuous integration.
+Below is how you can add this service to a new repository:
 
- 1. Make sure you have the **admin access** to the repo.
- (New core developers can gain such access across multiple repositories if Mike (`@mikefab <https://github.com/mikefab>`_) or one of the people in charge adds them to the `MagicBox Admins team <https://github.com/orgs/unicef/teams/magicbox-admins/members>`_.)
+ 1. Make sure you have the **admin access** to the repository.
+ New core developers can gain such access across multiple repositories by joining the `MagicBox Admins team <https://github.com/orgs/unicef/teams/magicbox-admins/members>`_.
+ Contact Mike (`@mikefab <https://github.com/mikefab>`_) or one of the lead maintainers for this permission.
 
- 2. If you are not on Travis CI yet, browse to `travis-ci.com <https://travis-ci.com/>`_ and log in with your GitHub account.
- Along the way, you will have the option to add any repository to Travis CI.
+ 2. If you are not already on Travis CI, browse to `travis-ci.com <https://travis-ci.com/>`_ and log in with your GitHub account.
+ Along the way, you will see the option to add any repository to Travis CI.
  Select *Only select repositories* and choose ``unicef/<the-repo-of-interest>`` from the drop-down list.
- **NOTE**: As of 07/2018, we still go by handpicking repositories rather than adding every repository to Travis CI, although this policy might change in the future.
- Once you arrive at your Travis CI Profile page, you will see the list of all repositories currently under Travis CI tracking (whether from your personal account or the `@unicef <https://github.com/unicef>`_ GitHub account).
+ At the moment, we still handpick repositories to be monitored by Travis CI because not all repositories will need this service.
+ Once you arrive at your Travis CI Profile page, you will see a list of all repositories currently under Travis CI tracking, whether they belong to your personal account or the `@unicef <https://github.com/unicef>`_ GitHub account.
 
  3. Now go to the repository's main page on GitHub, click on the *Settings* tab, then select *Integrations & services* from the left-side menu.
  If everything is properly set up in the previous step, you should see Travis CI under *Installed GitHub Apps*.
 
- 4. Go to the root directory of the repository and add a new file called ``.travis.yml``.
+ 4. From the root directory of the repository on GitHub, add a new file called ``.travis.yml``.
  Place the following content in that file:
 
  .. code-block:: javascript
@@ -156,13 +158,14 @@ Below is how you can add this service to a repo:
     directories:
       - "node_modules"
 
- (If these steps do not make sense, refer to this `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.)
+ *(If these steps do not make sense, refer to this `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.)*
 
  5. The last step is to add the Travis CI badge to the repository's README.
- Go to the Travis CI page of the repository - the URL probably looks like this: ``htps://travis-ci.com/unicef/the-repo-of-interest``.
+ Browse to the Travis CI page of the repository - the URL probably looks like this: ``htps://travis-ci.com/unicef/the-repo-of-interest``.
  Find the status symbol next to your repository's name (the little bar to the right of the Octocat).
- Click on it to generate the code block you'll put into your README, by selecting Markdown from the second dropdown menu when the Status Image window pops up (if unclear, see `this guide <https://docs.travis-ci.com/user/status-images/>`_).
- Copy the code snippet and place it on top of your repository's README file, just under the repository's name.
+ In the pop-up window, click the drop-down menu to select Markdown, then copy the generated code block.
+ Paste it to the top of your README file, just under the repository's name.
+ *If unclear, see `this guide <https://docs.travis-ci.com/user/status-images/>`_*
 
 .. _set-up-code-health-checks:
 
@@ -170,21 +173,25 @@ Set up code health checks with Code Climate
 ============================================
 =======
 
-We use `Code Climate <https://codeclimate.com/>`_ for our projects.
+`Code Climate <https://codeclimate.com/>`_ is the chosen code health checker for MagicBox projects.
 This automated code review service runs checks whenever a pull request is made, helping contributors and maintainers identify issues before they get merged into the code base.
-While Travis CI also provides pre-merge checks, the analysis provided by Code Climate is less about whether or not the program will break and more about how maintainable and "clean" the code is - hence the term "code health."
-Examples of issues that Code Climate will bring up: code is too complex/hard to read and understand; code is duplicated; a function or a class is too long and should be refactored; issues raised by ESLint.
-Aside from that, Code Climate also scores test coverage.
-Having high test coverage means the code in that particular repository is of high quality.
+That makes it sound similar to Travis CI or other CI tools in general - they all perform pre-merge checks.
+The main difference is: one is more about the technical functionality of the code (*e.g. will my program crash?**) and the other considers how "clean" and maintainable the code is - hence the term "code health."
+Examples of issues that Code Climate could bring up: complex or hard-to-understand code; code duplicates; functions or classes that are too long and need refactoring; style issues raised by ESLint.
 
-Below is how you can add this service to a repository - make sure to gain **admin access** first.
+Aside from that, Code Climate automates and displays test coverage results.
+Having a high test coverage score is encouraged for any code repository, especially open source projects since the code quality will affect and be affected by a larger group of developers.
+Code Climate reads output from locally run tests or coverage tools like `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_, then displays the score alongside the analysis of other quality metrics.
+The score can be viewed via both the dashboard on Code Climate site and the README badge.
 
- 1. Sign into `Code Climate - Quality <https://codeclimate.com/dashboard>`_ if you're not on it yet.
- If it's your first time signing up, use your GitHub account.
+Before following the steps below to activate Code Climate for a new repository, make sure to gain **admin access** first.
+
+ 1. Sign into `Code Climate - Quality <https://codeclimate.com/dashboard>`_ if you are not on it yet.
+ If this is your first time signing up, use your GitHub account.
  (If you already have a Code Climate account and it is not **linked with your GitHub account**, follow `these instructions <https://docs.codeclimate.com/docs/linkingunlinking-my-github-user>`_ to set that up.)
  Select *Open Source* as you sign up and you can add the repository here.
  Handpick repositories rather than opting for *All repositories*.
- If you're already landing on your Code Climate dashboard, then you can always add new repositories by clicking on the button *Add a repository*.
+ If you are already on Code Climate, add new repositories by clicking on the button *Add a repository* from your Dashboard.
  (If all of this doesn't make sense, use this `guide from CodeClimate <https://docs.codeclimate.com/docs/open-source-free#section-adding-an-oss-github-repo-to-code-climate>`_.)
 
  2. Now Code Climate has started tracking your code, but you need a bit more set-up in order to interact with this service more actively.
@@ -197,7 +204,7 @@ Below is how you can add this service to a repository - make sure to gain **admi
   If this option is not available or nowhere to be seen, it could be because you have not installed the Code Climate GitHub app.
   In step 1, by signing up and linking your GitHub account, you have connected with Code Climate via OAuth authentication.
   Your GitHub repository now sees Code Climate as an OAuth app.
-  However, for Code Climate to automatically display the check status at each pull request, Code Climate needs to have access to your GitHub repository as a GitHub app.
+  However, to automatically display the check status at each pull request, Code Climate needs to have access to your GitHub repository as a GitHub app.
   Hence, head to `Code Climate GitHub app <https://github.com/apps/codeclimate>`_ to install it on *both* your personal account and the `@unicef <https://github.com/unicef>`_ GitHub account. You should install it on your personal account to utilize Code Climate power when you work in your own forks.
 
   b. **Set up Webhooks**:
@@ -222,9 +229,9 @@ Below is how you can add this service to a repository - make sure to gain **admi
    nodesecurity:
      enabled: true
 
-  This code, in addition to accessing the newest ESLint release possible (channel 4, see more here: https://docs.codeclimate.com/docs/eslint), specifies the file extensions that we want ESLint to analyze.
+  This code accesses the newest ESLint release possible (channel 4, see more here: https://docs.codeclimate.com/docs/eslint) and specifies the file extensions that we want ESLint to analyze.
 
- 3. We are not done yet since we also want **test coverage reporting**.
+ 3. By now, most quality metrics have been taken care of except for *test coverage reporting**.
  As said in point number 7 `here <https://docs.codeclimate.com/docs/github-pull-requests#section-show-me-how>`_, test coverage statuses are enabled by default when you enable Pull Request integration.
  However, the docs article also says you need to configure test coverage for the statuses to populate.
  Hence, go to your repository on Code Climate and navigate to *Repo Settings* > *Test coverage*.
@@ -252,6 +259,12 @@ Below is how you can add this service to a repository - make sure to gain **admi
     - ./cc-test-reporter before-build
   after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+  The code above tells Code Climate to run and report on test coverage scores every time Travis CI runs checks for a new pull request.
+  Code Climate, however, does not generate test coverage results itself - it reads output from a supported testing framework. / it relies on third party tools to generate local test coverage reports, as said `here <https://docs.codeclimate.com/docs/configuring-test-coverage#section-requirements>`_.
+  We, therefore, need to install a testing framework - in our case, that would be `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_ since we code in JavaScript.
+  ................//PICK UP HERE AFTER INSTALLING Istanbul (?) FOR MAPs-PROTOTYPE.
+
 
 Deeper reads:
 
