@@ -171,7 +171,6 @@ Below is how you can add this service to a new repository:
 
 Set up code health checks with Code Climate
 ============================================
-=======
 
 `Code Climate <https://codeclimate.com/>`_ is the chosen code health checker for MagicBox projects.
 This automated code review service runs checks whenever a pull request is made, helping contributors and maintainers identify issues before they get merged into the code base.
