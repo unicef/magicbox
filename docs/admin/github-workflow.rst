@@ -259,11 +259,9 @@ Before following the steps below to activate Code Climate for a new repository, 
   after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
-  The code above tells Code Climate to run and report on test coverage scores every time Travis CI runs checks for a new pull request.
-  Code Climate, however, does not generate test coverage results itself - it reads output from a supported testing framework. / it relies on third party tools to generate local test coverage reports, as said `here <https://docs.codeclimate.com/docs/configuring-test-coverage#section-requirements>`_.
-  We, therefore, need to install a testing framework - in our case, that would be `lcov <http://ltp.sourceforge.net/coverage/lcov.php>`_ since we code in JavaScript.
-  ................//PICK UP HERE AFTER INSTALLING Istanbul (?) FOR MAPs-PROTOTYPE.
-
+ The code above tells Code Climate to run and report on test coverage scores every time Travis CI runs checks for a new pull request.
+ Code Climate, however, does not generate test coverage results itself - it reads output from a supported testing framework, which usually are third-party tools, as said `here <https://docs.codeclimate.com/docs/configuring-test-coverage#section-requirements>`_.
+ We, therefore, need to `set up a testing framework`_ in our code, which is covered below.
 
 Deeper reads:
 
@@ -276,6 +274,13 @@ Deeper reads:
  4. The last step is to embed the **maintainability and test coverage badges** to GitHub.
  Head to your repository on Code Climate and click on *Repo Settings* > *Badges*.
  Select the format of your choice and copy that code snippet to the top of the repository's README, just under the repository's name. (This `guide <https://docs.codeclimate.com/docs/overview#section-badges>`_ has good screenshots to illustrate this step.)
+
+.. _set-up-testing-framework:
+
+Set up a testing framework
+===========================
+
+.. note:: To be written.
 
 ***********************************
 How to maintain a GitHub repository
