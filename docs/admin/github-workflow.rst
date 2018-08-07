@@ -158,14 +158,14 @@ Below is how you can add this service to a new repository:
     directories:
       - "node_modules"
 
- *(If these steps do not make sense, refer to this `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.)*
+ If these steps do not make sense, refer to this `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.
 
  5. The last step is to add the Travis CI badge to the repository's README.
  Browse to the Travis CI page of the repository - the URL probably looks like this: ``htps://travis-ci.com/unicef/the-repo-of-interest``.
  Find the status symbol next to your repository's name (the little bar to the right of the Octocat).
  In the pop-up window, click the drop-down menu to select Markdown, then copy the generated code block.
  Paste it to the top of your README file, just under the repository's name.
- *If unclear, see `this guide <https://docs.travis-ci.com/user/status-images/>`_*
+ If unclear, see `this guide <https://docs.travis-ci.com/user/status-images/>`_.
 
 .. _set-up-code-health-checks:
 
@@ -267,9 +267,9 @@ Deeper reads:
 
 - If you don't have admin access to a repository but still want to track its detailed code health analysis, go to its README on GitHub, click on its Maintainability badge to open its Code Climate report, and hit *Star* to add this repository to your Code Climate dashboard. If unclear, `see this guide <https://docs.codeclimate.com/docs/adding-an-oss-repo-to-your-dashboard#section-adding-an-oss-repo-to-your-dashboard>`_.
 
-- If you are a core developer or maintainer, read this article to make better use of Code Climate in your pull request workflow: https://docs.codeclimate.com/docs/workflow
+- If you are a core developer or maintainer, `read this article <https://docs.codeclimate.com/docs/workflow>`_ to make better use of Code Climate in your pull request workflow.
 
-- Advanced features with *review comments*: https://docs.codeclimate.com/docs/github-pull-requests#section-pull-request-review-comments
+- Explore advanced features with `review comments <https://docs.codeclimate.com/docs/github-pull-requests#section-pull-request-review-comments>`_.
 
  4. The last step is to embed the **maintainability and test coverage badges** to GitHub.
  Head to your repository on Code Climate and click on *Repo Settings* > *Badges*.
