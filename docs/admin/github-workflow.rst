@@ -230,7 +230,7 @@ Before following the steps below to activate Code Climate for a new repository, 
 
   This code accesses the newest ESLint release possible (channel 4, see more here: https://docs.codeclimate.com/docs/eslint) and specifies the file extensions that we want ESLint to analyze.
 
- 3. By now, most quality metrics have been taken care of except for *test coverage reporting**.
+ 3. By now, most quality metrics have been taken care of except for *test coverage reporting*.
  As said in point number 7 `here <https://docs.codeclimate.com/docs/github-pull-requests#section-show-me-how>`_, test coverage statuses are enabled by default when you enable Pull Request integration.
  However, the docs article also says you need to configure test coverage for the statuses to populate.
  Hence, go to your repository on Code Climate and navigate to *Repo Settings* > *Test coverage*.
