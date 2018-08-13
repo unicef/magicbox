@@ -175,7 +175,7 @@ Set up code health checks with Code Climate
 `Code Climate <https://codeclimate.com/>`_ is the chosen code health checker for MagicBox projects.
 This automated code review service runs checks whenever a pull request is made, helping contributors and maintainers identify issues before they get merged into the code base.
 That makes it sound similar to Travis CI or other CI tools in general - they all perform pre-merge checks.
-The main difference is: one is more about the technical functionality of the code (*e.g. will my program crash?**) and the other considers how "clean" and maintainable the code is - hence the term "code health."
+The main difference is: one is more about the technical functionality of the code (*e.g. will my program crash?*) and the other considers how "clean" and maintainable the code is - hence the term "code health."
 Examples of issues that Code Climate could bring up: complex or hard-to-understand code; code duplicates; functions or classes that are too long and need refactoring; style issues raised by ESLint.
 
 Aside from that, Code Climate automates and displays test coverage results.
