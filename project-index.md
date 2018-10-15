@@ -10,5 +10,9 @@ All MagicBox projects and repositories underneath the UNICEF GitHub organization
 | [unicef/magicbox-latlon-admin-server](https://github.com/unicef/magicbox-latlon-admin-server) | API that takes latitude/longitude pairs, and returns an ID and metadata for the administrative boundaries they're located within | [@mikefab](https://github.com/mikefab) |
 | [unicef/magicbox-maps](https://github.com/unicef/magicbox-maps) | | [@mikefab](https://github.com/mikefab), [@ayanez17](https://github.com/ayanez17) |
 | [unicef/magicbox-open-api](https://github.com/unicef/magicbox-open-api) | API to serve open data aggregated by administrative boundaries | [@mikefab](https://github.com/mikefab) |
+| [unicef/magicbox-maps-prototype](https://github.com/unicef/magicbox-maps-prototype) | A no-backend prototype that visualizes mobility, school connectivity, and other socio-economic indicators | [@mikefab](https://github.com/mikefab), [@thoat](https://github.com/thoat) |
+| [unicef/magicbox-kepler-demo](https://github.com/unicef/magicbox-kepler-demo) | A new UI for MagicBox Maps, making use of Uber's KeplerGL | [@mikefab](https://github.com/mikefab), [@marcellamaki](https://github.com/marcellamaki) |
+| [unicef/magicbox-aad-app](https://github.com/unicef/magicbox-aad-app) | Allows our ReactJS app to work with Microsoft Azure Active Directory | [@mikefab](https://github.com/mikefab) |
+| [unicef/magicbox-multihop-mobility](https://github.com/unicef/magicbox-multihop-mobility) | SQL code to calculate multi-hop mobility | [@marcellamaki](https://github.com/marcellamaki) |
 
 Note: Another way to find all MagicBox-related repos is to go to UNICEF GitHub mainpage and enter the search term "magicbox", like [here](https://github.com/unicef?utf8=%E2%9C%93&q=magicbox&type=&language=). There you'll be able to see which repos are under more active development than the others.
