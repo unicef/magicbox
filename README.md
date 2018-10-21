@@ -18,6 +18,7 @@ multiple GitHub repositories designed to ingest, aggregate, and serve data.
 You can read more about the project's purpose on
 [unicefstories.org](http://unicefstories.org/magicbox/).
 
+If you're an experienced dev and you'd like to get involved, chat with us [here](https://gitter.im/unicef-innovation-dev/Lobby).
 
 ## What's here
 
