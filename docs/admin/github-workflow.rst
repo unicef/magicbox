@@ -161,7 +161,7 @@ Below is how you can add this service to a new repository:
  If these steps do not make sense, refer to this `Getting Started guide <https://docs.travis-ci.com/user/getting-started/>`_ by Travis CI.
 
  5. The last step is to add the Travis CI badge to the repository's README.
- Browse to the Travis CI page of the repository - the URL probably looks like this: ``htps://travis-ci.com/unicef/the-repo-of-interest``.
+ Browse to the Travis CI page of the repository - the URL probably looks like this: ``https://travis-ci.com/unicef/the-repo-of-interest``.
  Find the status symbol next to your repository's name (the little bar to the right of the Octocat).
  In the pop-up window, click the drop-down menu to select Markdown, then copy the generated code block.
  Paste it to the top of your README file, just under the repository's name.
