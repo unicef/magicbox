@@ -129,6 +129,7 @@ Set up continuous integration (CI)
 ==================================
 
 - `Why we need CI <https://github.com/unicef/magicbox/issues/6>`_
+- `If you get confused between travis-ci.org and travis-ci.com <https://blog.travis-ci.com/2018-05-02-open-source-projects-on-travis-ci-com-with-github-apps>`_ (heads-up: use travis-ci.com for new repositories; some of our earlier reposistories are on travis-ci.org, but we will wait until Travis CI rolls out their migration plan to take actions)
 
 MagicBox repositories use `Travis CI <https://travis-ci.com/>`_ for continuous integration.
 Below is how you can add this service to a new repository:
